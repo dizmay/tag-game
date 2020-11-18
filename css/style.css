@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #c31432, #240b36);
+}
+
+.phone {
+    width: 40rem;
+    height: 50rem;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: .1rem solid #FFF;
+    border-radius: 2rem;
+}
+
+.phone__screen {
+    width: 100%;
+    height: 80%;
+    padding: 2rem;
+}
+
+.phone__message {
+    margin: 0 auto;
+}
+
+.message {
+    color: lime;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.phone__interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 18%;
+}
+
+.turn, .time {
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.phone__interface button {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 7.5rem;
+    border: .5rem solid #045900;
+    outline: none;
+    border-radius: 50%;
+    background: #00ff2a;
+}
+
+.phone__interface button:hover {
+    border: .25rem solid #045900;
+    cursor: pointer;
+}
+
+.phone__interface button:active {
+    color: #FFF;
+    font-size: 2.25rem;
+    font-weight: bold;
+    width: 8rem;
+    height: 8rem;
+    border: .5rem solid rgb(100, 0, 0);
+    outline: none;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+}
+
+.phone__screen--grid {
+    background: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.phone__screen--grid button {
+    border: .25rem solid #1B3C59;
+    background: #F24162;
+    color: #120826;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
